@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json()); // Parse JSON data in the request body
 
-const uri = 'mongodb+srv://dhash:DILU1234hashi@cluster0.c5mwu4v.mongodb.net'; // MongoDB connection URI
+const uri = 'mongodb+srv://dhash:admin@cluster0.c5mwu4v.mongodb.net'; // MongoDB connection URI
 const dbName = 'sit725db'; // Database name
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 

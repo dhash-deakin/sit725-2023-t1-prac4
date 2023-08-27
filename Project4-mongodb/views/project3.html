@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MongoDB Data Insertion</title>
+</head>
+<body>
+  <h1>Add Data to MongoDB</h1>
+  <form id="dataForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    <button type="button" onclick="insertData()">Insert Data</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    function insertData() {
+      const name = document.getElementById("name").value;
+      const age = document.getElementById("age").value;
+
+      fetch('/insert', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, age })
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("result").textContent = data.message;
+      });
+    }
+  </script>
+</body>
+</html>

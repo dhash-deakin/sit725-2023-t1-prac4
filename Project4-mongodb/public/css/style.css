@@ -1,0 +1,35 @@
+/* public/css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+/* public/css/style.css */
+
+/* Set the height of the navbar */
+.navbar-size {
+height: 60px; /* Adjust this value as needed */
+}
+
+/* Set the image size to match the navbar's height */
+.user-image-size {
+height: 60px; /* This makes the image take up the full height of the parent */
+width: auto; /* Maintain the image's aspect ratio */
+}
+
+.main-body {
+  background-color: #F28487;
+  color: white;
+  height: calc(100vh - 64px);
+}
+.materialboxed-image {
+  margin: 0 auto;
+  height: 400px;
+}
+
+#button-div {
+  margin: 50px auto; /* Use appropriate margin value */
+}
+
+#card-section {
+  color: black;
+}

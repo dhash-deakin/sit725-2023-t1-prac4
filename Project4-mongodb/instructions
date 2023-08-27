@@ -1,0 +1,23 @@
+node -v // check node js version
+npm -v //Node Package Manager
+npm init // Initialize Your Project. This will create a package.json file. This file will store project metadata and dependencies. Follow the prompts to provide information about your project. You can press Enter to accept the default values for most fields.
+cat app.js >> console.log("Hello, Node.js!"); //Create Main Application File. Create a JavaScript file where Node.js application logic will reside
+node app.js // run your application
+npm install express // If you need to use external libraries or packages in your project, you can install them using npm. This will create a node_modules directory in your project and install the express package along with its dependencies.
+
+my-nodejs-project/
+|-- public/
+|   |-- css/
+|   |   |-- style.css
+|   |-- js/
+|   |   |-- script.js
+|-- views/
+|   |-- index.html
+|-- app.js
+|-- package.json
+public/ will contain publicly accessible assets like CSS and JavaScript files.
+views/ will hold your HTML files.
+app.js will contain your Node.js application logic.
+
+After installing dependencies, configure it to listen port 3000 and run the code. now you can access http://localhost:3000/ 
+npm install mongoose

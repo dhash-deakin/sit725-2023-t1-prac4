@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Node.js Project</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper navbar-size">
+      <a href="#" class="brand-logo"><img class="user-image-size" src="/images/user-image.png" /></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a target="_blank" href="https://www.linkedin.com/in/navit-choudhary-5133b9104/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="main-body">
+    <div class="container">
+      <!------------------Heading-Div-------------------->
+      <div class="row">
+        <div class="col s12 center-align">
+          <h1 id="heading">Welcome to SIT 725 Week 3</h1>
+          <p class="flow-text">This is a demo application that tries to use a few components from materialize and through this practical we try to have some fun with Materialize and its components</p>
+        </div>
+        <div class="col s12 center-align">
+          <img class="materialboxed materialboxed-image" src="images/livedemo.png">
+        </div>
+      </div>
+      <!------------------Form-Div-------------------->
+      <div class="row center-align" id="button-div">
+        <div class="col s12">
+          <a class="waves-effect waves-light btn btn-large pink lighten-2 modal-trigger" href="#formModal">Get Started</a>
+        </div>
+      </div>
+        <!-- Modal Structure -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <form>
+        <div class="input-field">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="input-field">
+          <input id="city" type="text" class="validate">
+          <label for="city">City</label>
+        </div>
+        <div class="input-field">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <button class="waves-effect waves-light btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div><!--end-of-modal-div-->
+      <!------------------Card-Divs-------------------->
+      <div class="row" id="card-section">
+        <div class="col s4 center-align" id="tile1">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/bengal.jpg">
+            </div>
+            <div class="card-content flex-content">
+              <div class="flex-title">
+                <span class="card-title activator grey-text text-darken-4">Bengal cat</span>
+              </div>
+              <div class="flex-link">
+                <p class="center-align"><a href="#">Click Me</a></p>
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Bengal cat<i class="material-icons right">close</i></span>
+              <p class="card-text">
+                Hey, I'm a Bengal cat – a striking combo of domestic flair and wild spirit. My coat rocks these cool leopard-like spots and my body's all sleek muscle, perfect for acrobatics. But don't be fooled by my wild looks – I'm a social and affectionate buddy, here to add a dash of the exotic to your everyday.
+              </p>
+            </div>
+          </div>
+        </div> <!--end of tile1-->
+        <div class="col s4 center-align" id="tile2">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/maine-coon.jpg">
+            </div>
+            <div class="card-content flex-content">
+              <div class="flex-title">
+                <span class="card-title activator grey-text text-darken-4">Maine Coon</span>
+              </div>
+              <div class="flex-link">
+                <p class="center-align"><a href="#">Click Me</a></p>
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Maine Coon<i class="material-icons right">close</i></span>
+              <p class="card-text">
+                Hey there, I'm a Maine Coon cat – a gentle giant in the feline world. With my impressive size, tufted ears, and a luxurious plume of a tail, I'm basically a walking masterpiece of nature. My fur, often boasting a mix of colors, keeps me cozy in the winter, while my bushy tail doubles as a warm wrap. I'm a laid-back and sociable companion, known to chirp and trill rather than meow, making me the ultimate charming chatterbox to have around.
+              </p>
+            </div>
+          </div>
+        </div> <!--end of tile2-->
+        <div class="col s4 center-align" id="tile3">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/egyptian-mau.jpg">
+            </div>
+            <div class="card-content flex-content">
+              <div class="flex-title">
+                <span class="card-title activator grey-text text-darken-4">Egyptian Mau </span>
+              </div>
+              <div class="flex-link">
+                <p class="center-align"><a href="#">Click Me</a></p>
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Egyptian Mau<i class="material-icons right">close</i></span>
+              <p class="card-text">
+                Hi, I'm an Egyptian Mau – a living tribute to elegance and grace from ancient times. My coat is a shimmering masterpiece, as it's the only naturally occurring breed with spots that look like they're hand-painted. With a gentle flicker of the tail and striking green eyes that hold a hint of mystery, I embody the spirit of a wild hunter from the desert. But beneath this aura of mystique, I'm a loyal and interactive companion, bringing a touch of the timeless to your modern world
+              </p>
+            </div>
+          </div>
+        </div> <!--end of tile3-->
+      </div>
+   </div><!------------------end-of-container-div-------------------->
+  </main>
+
+  <script src="/js/form.js"></script>
+  <script src="/js/script.js"></script>
+  <!--script src="/js/db.js"></script-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalElems = document.querySelectorAll('.modal');
+      var modalInstances = M.Modal.init(modalElems);
+    });
+  </script>
+
+</body>
+</html>
